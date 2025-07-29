@@ -35,6 +35,9 @@ async def read_root(request: Request):
     data = {"title": "FastAPI Jinja2 Example", "message": "Hello from FastAPI!"}
     return templates.TemplateResponse("index.html", {"request": request, **data})
 
+@app.get("/ping")
+def ping():
+    return "pong"
 
 @app.post("/prompt")
 async def prompt(request: Request):
