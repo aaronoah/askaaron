@@ -29,7 +29,7 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 ENV PYTHONPATH=/app
 
-ENV FRONTEND_HOST=http://askaaron.ai
+ENV FRONTEND_HOST=https://askaaron.ai
 
 COPY ./pyproject.toml ./uv.lock /app/
 
